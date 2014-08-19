@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 
+#This script can be used to download multiple Nessus report files from Nessus servers at once, rather than individually. 
+#The output formats can be .nessus (xml) or the greppable .nbe format.
+
 import sys, urllib, urllib2, getpass, cookielib, time, fnmatch, re, os
 import xml.etree.ElementTree as ET
 from optparse import OptionParser
